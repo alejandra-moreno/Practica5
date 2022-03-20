@@ -36,7 +36,7 @@ submit.addEventListener("click",
           body: JSON.stringify({
               nombre : nombre,
               apellido : apellido,
-              email : correo,
+              correo : correo,
               cumpleaños : cumpleaños.toString(),
               edad : parseInt(edad),
               contraseña : contraseña,
@@ -60,14 +60,14 @@ submit.addEventListener("click",
 
       let nombreCheck = data.nombre;
       let apellidoCheck = data.apellido;
-      let emailCheck = data.email;
+      let correoCheck = data.correo;
       let cumpleañosCheck = data.cumpleaños.toString();
       let edadCheck = data.edad;
       let contraseñaCheck = data.contraseña;
   
       document.getElementById("nombreCheck").innerHTML = nombreCheck;
       document.getElementById("apellidoCheck").innerHTML = apellidoCheck;
-      document.getElementById("emailCheck").innerHTML = emailCheck;
+      document.getElementById("correoCheck").innerHTML = correoCheck;
       document.getElementById("cumpleañosCheck").innerHTML = cumpleañosCheck;
       document.getElementById("edadCheck").innerHTML = edadCheck;
       document.getElementById("contraseñaCheck").innerHTML = contraseñaCheck;

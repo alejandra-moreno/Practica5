@@ -4,15 +4,15 @@ public class User {
 
     private String nombre;
     private String apellido;
-    private String email;
+    private String correo;
     private String cumpleaños;
     private Integer edad;
     private String contraseña;
 
-    public User(String nombre, String apellido, String email, String cumpleaños, Integer edad, String contraseña) {
+    public User(String nombre, String apellido, String correo, String cumpleaños, Integer edad, String contraseña) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.email = email;
+        this.correo = correo;
         this.cumpleaños = cumpleaños;
         this.edad = edad;
         this.contraseña = contraseña;
@@ -35,11 +35,11 @@ public class User {
     }
 
     public String getCorreo() {
-        return this.email;
+        return this.correo;
     }
 
-    public void setCorreo(String email) {
-        this.email = email;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public String getCumpleaños() {
